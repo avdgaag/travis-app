@@ -8,6 +8,7 @@
 
 #import "TravisViewController.h"
 #import "OCTravis.h"
+#import "TravisTableCellView.h"
 
 @interface TravisViewController ()
 
@@ -59,9 +60,17 @@
     return self.builds.count;
 }
 
-- (id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+- (NSView *) tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    TravisTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     NSDictionary *build = [self.builds objectAtIndex:row];
-    return [build objectForKey: tableColumn.identifier];
+    NSString *title = [NSString stringWithFormat: @"%@ %@", [build objectForKey:@"number"], @"avdgaag/rpub"];
+    cellView.repoNameTextField.stringValue = title;
+    return cellView;
 }
+
+//- (id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+//    NSDictionary *build = [self.builds objectAtIndex:row];
+//    return [build objectForKey: tableColumn.identifier];
+//}
 
 @end

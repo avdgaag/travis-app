@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24E96DBAC30144E7AA191C4D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C368CF43C245BF887B93A5 /* libPods.a */; };
+		D66EC288181438390016972C /* TravisTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EC287181438390016972C /* TravisTableCellView.m */; };
 		D68A4CE918116B8700D46E35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68A4CE818116B8700D46E35 /* Cocoa.framework */; };
 		D68A4CF318116B8700D46E35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D68A4CF118116B8700D46E35 /* InfoPlist.strings */; };
 		D68A4CF518116B8700D46E35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D68A4CF418116B8700D46E35 /* main.m */; };
@@ -39,6 +40,8 @@
 		17C368CF43C245BF887B93A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4A8F59364E47AFA7C4716C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D65D0F3D1812B22000BB437C /* Travis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Travis.entitlements; sourceTree = "<group>"; };
+		D66EC286181438390016972C /* TravisTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravisTableCellView.h; sourceTree = "<group>"; };
+		D66EC287181438390016972C /* TravisTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravisTableCellView.m; sourceTree = "<group>"; };
 		D68A4CE518116B8700D46E35 /* Travis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68A4CE818116B8700D46E35 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D68A4CEB18116B8700D46E35 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,8 @@
 				D68A4D1F18116F3500D46E35 /* TravisViewController.h */,
 				D68A4D2018116F3500D46E35 /* TravisViewController.m */,
 				D68A4D2118116F3500D46E35 /* TravisViewController.xib */,
+				D66EC286181438390016972C /* TravisTableCellView.h */,
+				D66EC287181438390016972C /* TravisTableCellView.m */,
 				D68A4D241811DAE400D46E35 /* OCDurationFormatter.h */,
 				D68A4D251811DAE400D46E35 /* OCDurationFormatter.m */,
 			);
@@ -321,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66EC288181438390016972C /* TravisTableCellView.m in Sources */,
 				D68A4D1E18116DFC00D46E35 /* OCTravis.m in Sources */,
 				D68A4D2218116F3500D46E35 /* TravisViewController.m in Sources */,
 				D68A4D261811DAE400D46E35 /* OCDurationFormatter.m in Sources */,
